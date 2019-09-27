@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Desafio - Anúncio Web Motors</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="styleGeral.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <style type="text/css">
+        .auto-style1 {
+            margin-top: 26px;
+        }
+        .auto-style2 {
+            margin-top: 23px;
+        }
+        .auto-style3 {
+            margin-top: 31px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 110px; background: url(/images/bg-header-red-home.jpg) repeat-x bottom center; width: 100%; margin-bottom: 10px;">
+            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/logo.png" Style="vertical-align: middle;" Height="78px" CssClass="auto-style1" />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo-50.png" Style="vertical-align: middle; margin-right: 30px; margin-left: 30px;" CssClass="auto-style2" />
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/logo-texto_270.png" Style="vertical-align: middle;" CssClass="auto-style3" />
+        </div>
+        <div id="wrapper">
+            <div id="page">
+                <div id="content">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:ContentPlaceHolder ID="ConteudoPrincipal" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div id="content_footer">
+                <div id="content_footer_right">
+                    &nbsp;
+                </div>
+                <div id="content_footer_left">
+                    &nbsp;
+                </div>
+            </div>
+
+            <div id="footer">
+                <p>
+                    Desafio - Anúncio Web Motors
+                    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                </p>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
