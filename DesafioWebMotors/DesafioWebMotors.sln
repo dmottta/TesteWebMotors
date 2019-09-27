@@ -24,8 +24,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesafioWebMotors", ".", "{4
 		SlnRelativePath = "..\DesafioWebMotors\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONTest", "ConsoleApp1\JSONTest.csproj", "{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,10 +34,6 @@ Global
 		{4EAB27BE-D370-42B4-86FA-3ADCA472F795}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EAB27BE-D370-42B4-86FA-3ADCA472F795}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{4EAB27BE-D370-42B4-86FA-3ADCA472F795}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

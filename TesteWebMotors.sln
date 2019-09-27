@@ -3,28 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesafioWebMotors", "..\DesafioWebMotors\", "{4EAB27BE-D370-42B4-86FA-3ADCA472F795}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesafioWebMotors", "DesafioWebMotors\", "{4EAB27BE-D370-42B4-86FA-3ADCA472F795}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_58708"
-		Debug.AspNetCompiler.PhysicalPath = "..\DesafioWebMotors\"
+		Debug.AspNetCompiler.PhysicalPath = "DesafioWebMotors\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58708\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_58708"
-		Release.AspNetCompiler.PhysicalPath = "..\DesafioWebMotors\"
+		Release.AspNetCompiler.PhysicalPath = "DesafioWebMotors\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58708\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "58708"
-		SlnRelativePath = "..\DesafioWebMotors\"
+		SlnRelativePath = "DesafioWebMotors\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONTest", "..\JSONTest\JSONTest.csproj", "{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONTest", "JSONTest\JSONTest.csproj", "{68397276-6EA3-45A9-B2DF-1E1C435CEEA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

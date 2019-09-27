@@ -72,7 +72,9 @@
                 <asp:DropDownList ID="ddlMake" runat="server" Width="300px" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="DSMake" DataTextField="Name" DataValueField="Id" OnSelectedIndexChanged="ddlMake_SelectedIndexChanged">
                     <asp:ListItem Value="-1">-----</asp:ListItem>
                 </asp:DropDownList>
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+
+    <asp:ImageButton ID="btn01" runat="server" ImageUrl="~/Images/Zoom-icon_24.png" ToolTip="Pesquisar" />
+                <asp:TextBox ID="tb01" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -80,12 +82,12 @@
                 <asp:Label ID="Label2" runat="server" Text="Model:"></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="ddlModel" runat="server" Width="300px" AutoPostBack="True" DataTextField="Name" DataValueField="Id" AppendDataBoundItems="True">
+                <asp:DropDownList ID="ddlModel" runat="server" Width="300px" AutoPostBack="True" DataTextField="Name" DataValueField="Id" AppendDataBoundItems="True" OnSelectedIndexChanged="ddlModel_SelectedIndexChanged">
                     <asp:ListItem Value="-1">-----</asp:ListItem>
                 </asp:DropDownList>
 
-    <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/Images/Zoom-icon_24.png" ToolTip="Pesquisar" OnClick="ImageButton5_Click" />
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+    <asp:ImageButton ID="btn02" runat="server" ImageUrl="~/Images/Zoom-icon_24.png" ToolTip="Pesquisar" OnClick="ImageButton5_Click" />
+                <asp:TextBox ID="tb02" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -97,8 +99,8 @@
                     <asp:ListItem Value="-1">-----</asp:ListItem>
                 </asp:DropDownList>
 
-    <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/Images/Zoom-icon_24.png" ToolTip="Pesquisar" OnClick="ImageButton4_Click" />
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+    <asp:ImageButton ID="btn03" runat="server" ImageUrl="~/Images/Zoom-icon_24.png" ToolTip="Pesquisar" OnClick="ImageButton4_Click" />
+                <asp:TextBox ID="tb03" runat="server"></asp:TextBox>
             </td>
         </tr>
     </table>

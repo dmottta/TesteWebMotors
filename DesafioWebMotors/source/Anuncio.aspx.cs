@@ -51,6 +51,7 @@ public partial class Anuncio : System.Web.UI.Page
     protected void ddlMake_SelectedIndexChanged(object sender, EventArgs e)
     {
         TextBox1.Text += ddlMake.SelectedValue;
+        tb01.Text = ddlMake.SelectedValue;
 
         try
         {
@@ -68,6 +69,7 @@ public partial class Anuncio : System.Web.UI.Page
         //TextBox1.Text = ddlMake.SelectedValue + "aaa";
 
         TextBox1.Text += "ddlModel_SelectedIndexChanged";
+        tb02.Text = ddlMake.SelectedValue;
 
 
         //try
@@ -98,4 +100,6 @@ public partial class Anuncio : System.Web.UI.Page
         ddlModel.DataSource = ModelBLL.GetModel(3);
         ddlModel.DataBind();
     }
+
+
 }
