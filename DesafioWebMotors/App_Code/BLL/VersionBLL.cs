@@ -19,8 +19,8 @@ public class VersionBLL
 
     class Version
     {
-        public int modelId { get; set; }
         public int id { get; set; }
+        public int modelId { get; set; }
         public string name { get; set; }
 
     }
@@ -48,9 +48,9 @@ public class VersionBLL
             ex.ToString();            
         }
 
-        DataTable dt = new DataTable();
-        dt.Columns.Add("ModelId");
+        DataTable dt = new DataTable();        
         dt.Columns.Add("Id");
+        dt.Columns.Add("ModelId");
         dt.Columns.Add("Name");
         DataRow dr = null;
 
@@ -58,7 +58,8 @@ public class VersionBLL
         foreach (var item in list)
         {
             dr = dt.NewRow(); // have new row on each iteration
-            dr["ModelId"] = item.id;
+            dr["Id"] = item.id;
+            dr["ModelId"] = item.modelId;
             dr["Name"] = item.name;
             dt.Rows.Add(dr);
         }
@@ -93,7 +94,9 @@ public class VersionBLL
         var list = JsonConvert.DeserializeObject<List<Version>>(jsonData);
         foreach (var item in list)
         {            
-            result += item.name;
+            result += "id: " + item.id;
+            result += "modelid: " + item.modelId;
+            result += "name: " + item.name + "\n";
         }
 
         return result;
