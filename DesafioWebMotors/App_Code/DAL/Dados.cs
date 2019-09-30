@@ -21,7 +21,8 @@ public class Dados
     /// <returns></returns>
     private static SqlConnection getConnection()
     {
-        SqlConnection connection = new SqlConnection("Data Source=bssp-44;Initial Catalog=AdventureWorks2012;Persist Security Info=True;User ID=admdelphi;Password=xx77jb61");        
+        SqlConnection connection = new SqlConnection("Data Source=bssp-44;Initial Catalog=AdventureWorks2012;Persist Security Info=True;User ID=admdelphi;Password=xx77jb61");
+        //SqlConnection connection = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = teste_webmotors; Integrated Security = True; Connect Timeout = 60; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
         return connection;
     }
 

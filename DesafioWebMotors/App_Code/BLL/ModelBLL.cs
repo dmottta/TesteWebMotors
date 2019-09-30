@@ -19,8 +19,8 @@ public class ModelBLL
 
     class Model
     {
-        public int makeId { get; set; }
         public int id { get; set; }
+        public int makeId { get; set; }        
         public string name { get; set; }
 
     }
@@ -49,8 +49,8 @@ public class ModelBLL
         }
 
         DataTable dt = new DataTable();
-        dt.Columns.Add("MakeId");
         dt.Columns.Add("Id");
+        dt.Columns.Add("MakeId");        
         dt.Columns.Add("Name");
         DataRow dr = null;
 
@@ -58,7 +58,8 @@ public class ModelBLL
         foreach (var item in list)
         {
             dr = dt.NewRow(); // have new row on each iteration
-            dr["MakeId"] = item.id;
+            dr["Id"] = item.id;
+            dr["MakeId"] = item.makeId;
             dr["Name"] = item.name;
             dt.Rows.Add(dr);
         }

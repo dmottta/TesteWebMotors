@@ -31,7 +31,17 @@ public class AnuncioBLL
 
 
     /// <summary>
-    /// Inclui um Anúncio no BD
+    /// Lista um Anúncio
+    /// </summary>    
+    /// <returns></returns>
+    public static DataTable GetAnuncio(int id)
+    {
+        return Dados.ExecuteQuery("SELECT * from tb_AnuncioWebmotors where id = " + id.ToString());
+    }
+
+
+    /// <summary>
+    /// Inclui um Anúncio no BD, fácil
     /// </summary>
     /// <returns></returns>
     public static int IncluirFacil()
@@ -45,6 +55,29 @@ public class AnuncioBLL
 
         SqlCommand cmd = new SqlCommand();
         cmd.CommandText = query.ToString();       
+
+        return Convert.ToInt16(Dados.ExecuteScalar(cmd));
+    }
+
+
+    /// <summary>
+    /// Inclui um Anúncio no BD, fácil
+    /// </summary>
+    /// <returns></returns>
+    public static int Incluir(string marca, string modelo, string versao, string ano, string quilometragem, string observacao)
+    {
+        StringBuilder query = new StringBuilder();
+        query.AppendLine("INSERT INTO tb_AnuncioWebmotors(marca, modelo, versao, ano, quilometragem, observacao)");        
+        query.AppendLine("VALUES(@marca, @modelo, @versao,  @ano,  @quilometragem,  @observacao) ");
+
+        SqlCommand cmd = new SqlCommand();
+        cmd.CommandText = query.ToString();        
+        cmd.Parameters.AddWithValue("@marca", marca);
+        cmd.Parameters.AddWithValue("@modelo", modelo);
+        cmd.Parameters.AddWithValue("@versao", versao);
+        cmd.Parameters.AddWithValue("@ano", ano);
+        cmd.Parameters.AddWithValue("@quilometragem", quilometragem);
+        cmd.Parameters.AddWithValue("@observacao", observacao);
 
         return Convert.ToInt16(Dados.ExecuteScalar(cmd));
     }

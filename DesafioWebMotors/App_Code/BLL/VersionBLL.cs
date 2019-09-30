@@ -19,8 +19,8 @@ public class VersionBLL
 
     class Version
     {
-        public int modelId { get; set; }
         public int id { get; set; }
+        public int modelId { get; set; }        
         public string name { get; set; }
 
     }
@@ -49,8 +49,8 @@ public class VersionBLL
         }
 
         DataTable dt = new DataTable();
-        dt.Columns.Add("ModelId");
         dt.Columns.Add("Id");
+        dt.Columns.Add("ModelId");        
         dt.Columns.Add("Name");
         DataRow dr = null;
 
@@ -58,7 +58,8 @@ public class VersionBLL
         foreach (var item in list)
         {
             dr = dt.NewRow(); // have new row on each iteration
-            dr["ModelId"] = item.id;
+            dr["Id"] = item.id;
+            dr["ModelId"] = item.modelId;
             dr["Name"] = item.name;
             dt.Rows.Add(dr);
         }

@@ -11,30 +11,14 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-    </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            margin-top: 26px;
-        }
-
-        .auto-style2 {
-            margin-top: 31px;
-        }
-
-        .auto-style3 {
-            margin-top: 23px;
-        }
-    </style>
+    </asp:ContentPlaceHolder>    
 </head>
 
 <body>
     <form id="form1" runat="server">
 
 
-        <div style="height: 110px; background: url(../images/bg-header-red-home.jpg) repeat-x bottom center; width: 100%; margin-bottom: 10px;">
-            <asp:Image ID="Image3" runat="server" ImageUrl="~/images/logo.png" Style="vertical-align: middle;" Height="78px" CssClass="auto-style1" />
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo-50.png" Style="vertical-align: middle; margin-right: 30px; margin-left: 30px;" CssClass="auto-style3" />
-            <asp:Image ID="Image2" runat="server" ImageUrl="~/images/logo-texto_270.png" Style="vertical-align: middle;" CssClass="auto-style2" />
+        <div style="height: 30px; background: url(../images/bg-header-red-home.jpg) repeat-x bottom center; width: 100%; margin-bottom: 10px;">            
         </div>
 
         <div id="page">
@@ -43,31 +27,7 @@
                 <asp:ContentPlaceHolder ID="ConteudoPrincipal" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-            <!-- end #content -->
-            <div id="sidebar-bg">
-                <div id="sidebar">
-                    <ul>
-                        <li>
-                            <h2>Cadastro</h2>
-                            <ul>
-                                <li>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/source/Anuncio.aspx">Anúncio</asp:HyperLink></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2>Relatórios</h2>
-                            <ul>
-                                <%--<li>
-                                    <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/relatorios/Rel001Anuncios.aspx">Lista de Anúncios</asp:HyperLink></li>--%>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- end #sidebar -->
-            <div style="clear: both;">
-                &nbsp;
-            </div>
+            <!-- end #content -->            
         </div>
         <!-- end #page -->
         <div id="footer">
