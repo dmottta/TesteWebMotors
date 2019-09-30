@@ -122,6 +122,7 @@
             <asp:Parameter Name="observacao" Type="String" />
         </UpdateParameters>
     </asp:ObjectDataSource>
+    <asp:Label ID="Label7" runat="server" Text="Configurações do BD em APP_Code\DAL\Dados.cs" Font-Size="10px"></asp:Label>
     <br />
     <br />
 </asp:Content>
