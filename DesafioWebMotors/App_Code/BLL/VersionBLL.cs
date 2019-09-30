@@ -20,7 +20,7 @@ public class VersionBLL
     class Version
     {
         public int id { get; set; }
-        public int modelId { get; set; }        
+        public int modelId { get; set; }
         public string name { get; set; }
 
     }
@@ -48,9 +48,9 @@ public class VersionBLL
             ex.ToString();            
         }
 
-        DataTable dt = new DataTable();
+        DataTable dt = new DataTable();        
         dt.Columns.Add("Id");
-        dt.Columns.Add("ModelId");        
+        dt.Columns.Add("ModelId");
         dt.Columns.Add("Name");
         DataRow dr = null;
 
@@ -94,7 +94,9 @@ public class VersionBLL
         var list = JsonConvert.DeserializeObject<List<Version>>(jsonData);
         foreach (var item in list)
         {            
-            result += item.name;
+            result += "id: " + item.id;
+            result += "modelid: " + item.modelId;
+            result += "name: " + item.name + "\n";
         }
 
         return result;
